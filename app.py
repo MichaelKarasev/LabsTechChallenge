@@ -7,6 +7,9 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route('/mak2275', methods=['GET'])
+def mikeKarasev():
+    return render_template('mike.html')
 
 if __name__ == '__main__':
     app.run()
